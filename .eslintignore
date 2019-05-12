@@ -1,0 +1,10 @@
+test.js
+/tmp/**
+/docs/**
+/jsdoc/**
+/build/**
+/coverage/**
+/templates/**
+/tests/bench/**
+/tests/fixtures/**
+/tests/performance/**
