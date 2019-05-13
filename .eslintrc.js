@@ -7,5 +7,6 @@ module.exports = {
     'no-underscore-dangle': 0,
     'import/no-unresolved': 0,
     'no-restricted-syntax': 0,
+    'linebreak-style': 0,
   },
 };
