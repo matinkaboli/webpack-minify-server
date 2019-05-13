@@ -1,17 +1,16 @@
 {
   "presets": [
-    "env",
-    "es2015"
+    "@babel/preset-env"
   ],
   "plugins": [
-    ["transform-runtime", {
+    ["@babel/transform-runtime", {
       "regenerator": true
     }],
     "add-module-exports",
-    "transform-regenerator",
-    "transform-class-properties",
-    "transform-decorators-legacy",
+    "@babel/transform-regenerator",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
     "transform-object-rest-spread",
-    "transform-async-to-generator"
+    "@babel/transform-async-to-generator"
   ]
 }
