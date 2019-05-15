@@ -36,3 +36,7 @@ jspm_packages
 # Build directory
 build/
 .DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml

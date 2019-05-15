@@ -26,12 +26,12 @@ gulp.task('clean', () => {
   ]);
 });
 
-gulp.task('dev', ['clean'], () =>
+gulp.task('dev', gulp.series('clean', () =>
   gulp.src('src/app.js')
     .pipe(webpack(webpackDev))
-    .pipe(gulp.dest('build/')));
+    .pipe(gulp.dest('build/'))));
 
-gulp.task('prod', ['clean'], () =>
+gulp.task('prod', gulp.series('clean', () =>
   gulp.src('src/app.js')
     .pipe(webpack(webpackProd))
-    .pipe(gulp.dest('build/')));
+    .pipe(gulp.dest('build/'))));

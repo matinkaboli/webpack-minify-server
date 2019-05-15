@@ -1,3 +1,1 @@
-export default {
-  port: process.env.PORT || '8080',
-};
+export const port = process.env.PORT || '8080';
